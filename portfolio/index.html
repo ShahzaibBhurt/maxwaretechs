@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Grid Layout with Scrollable Content View | Codrops</title>
+		<meta name="description" content="A Masonry-powered grid layout with a motion hover effect on the grid items and a scrollable content view." />
+		<meta name="keywords" content="masonry, grid layout, hover effect, content preview, javascript, gsap, template, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="img/icon.png">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	<!-- Website Title -->
+    <title>MaxWare - Welcome to the world of software solutions</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/fontawesome-all.css" rel="stylesheet">
+    <link href="../css/swiper.css" rel="stylesheet">
+    <link href="../css/magnific-popup.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    </head>
+	<body>
+        
+		<main>
+            <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Evolo</a> -->
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="../index.html"><img src="../images/logo.svg" alt="alternative"></a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="../index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="../index.html#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="../index.html#pricing">Student Section</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="../index.html#request">Request</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="../index.html#about">About</a>
+                </li>
+                <!-- Dropdown Menu ->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">Terms Conditions</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">Privacy Policy</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="../index.html#contact">Contact</a>
+                </li>
+                <li class="nav-item" style="color: red !important;">
+                    <a class="nav-link page-scroll" href="">Portfolio <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <!--<span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <i class="fas fa-circle fa-stack-2x facebook"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <i class="fas fa-circle fa-stack-2x twitter"></i>
+                        <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>-->
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+			<div class="grid-wrap">
+				<div class="grid">
+                    <a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/youpi(cover).png" alt="youpi" />
+						</div>
+						<h3 class="grid__item-title">Youpi Home</h3>
+						<h4 class="grid__item-number">Y01</h4>
+					</a>
+                    <a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/youpi_page2(cover).png" alt="youpi" />
+						</div>
+						<h3 class="grid__item-title">Youpi Missions</h3>
+						<h4 class="grid__item-number">Y02</h4>
+					</a>
+                    <a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/youpi_page3(cover).png" alt="youpi" />
+						</div>
+						<h3 class="grid__item-title">Youpi Careers</h3>
+						<h4 class="grid__item-number">Y03</h4>
+					</a>
+                    <a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/youpi_page4.png" alt="youpi" />
+						</div>
+						<h3 class="grid__item-title">Youpi Meta Real</h3>
+						<h4 class="grid__item-number">Y04</h4>
+					</a>
+                    <a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/shiptt(cover).png" alt="Shiptt" />
+						</div>
+						<h3 class="grid__item-title">Shiptt OR T&T</h3>
+						<h4 class="grid__item-number">T&T</h4>
+					</a>
+                    <a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/boxbeetle(cover).png" alt="Boxbeetle" />
+						</div>
+						<h3 class="grid__item-title">Boxbeetle</h3>
+						<h4 class="grid__item-number">BB</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/frontScialimpactApps.jpg" alt="ScialimpactApps" />
+						</div>
+						<h3 class="grid__item-title">Scial Impact Apps</h3>
+						<h4 class="grid__item-number">S01</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/social_impact_app_2_front.jpg" alt="ScialimpactApps" />
+						</div>
+						<h3 class="grid__item-title">Scial Impact Apps</h3>
+						<h4 class="grid__item-number">S02</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/front_social_impact_app_3.jpg" alt="Social Impact Apps" />
+						</div>
+						<h3 class="grid__item-title">Social Impact Apps</h3>
+						<h4 class="grid__item-number">S03</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/roshnipublication.jpg" alt="Roshni Publication" />
+						</div>
+						<h3 class="grid__item-title">Roshni Publication</h3>
+						<h4 class="grid__item-number">RP</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/Busy_Business_Management_Software_front.png" alt="Busy Business Management Software" />
+						</div>
+						<h3 class="grid__item-title">Busy Business Management Software</h3>
+						<h4 class="grid__item-number">B01</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/getitship_front.png" alt="Get-It-Ship" />
+						</div>
+						<h3 class="grid__item-title">Get-It-Ship</h3>
+						<h4 class="grid__item-number">GIS</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/FrosCampelo_front.png" alt="Fros Campelo" />
+						</div>
+						<h3 class="grid__item-title">Fros Campelo</h3>
+						<h4 class="grid__item-number">FC1</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/soccerhogs_front.png" alt="SoccerHogs" />
+						</div>
+						<h3 class="grid__item-title">SoccerHogs</h3>
+						<h4 class="grid__item-number">SH1</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/CanePlanet_front.png" alt="CanePlanet" />
+						</div>
+						<h3 class="grid__item-title">CanePlanet</h3>
+						<h4 class="grid__item-number">CP1</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/BusyPK_Brochure.jpg" alt="BusyPK_Brochure" />
+						</div>
+						<h3 class="grid__item-title">BusyPK Brochure</h3>
+						<h4 class="grid__item-number">B02</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/getitshipApp_front.png" alt="getitshipApp_front" />
+						</div>
+						<h3 class="grid__item-title">Get-It-Ship Application</h3>
+						<h4 class="grid__item-number">GIS02</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/myalleyway.jpg" alt="myalleyway" />
+						</div>
+						<h3 class="grid__item-title">Myalleyway Live</h3>
+						<h4 class="grid__item-number">MV3</h4>
+					</a>
+				</div>
+			</div><!-- /grid-wrap -->
+			<div class="content">
+                <div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/youpi.png" alt="Youpi" />
+						<h2 class="content__item-title"></h2>
+					</div>
+				</div><!-- /content__item -->
+                <div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/youpi_page2.png" alt="Youpi" />
+						<h2 class="content__item-title"></h2>
+					</div>
+				</div><!-- /content__item -->
+                <div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/youpi_page3.png" alt="Youpi" />
+						<h2 class="content__item-title"></h2>
+					</div>
+				</div><!-- /content__item -->
+                <div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/youpi_page4.png" alt="Youpi" />
+						<h2 class="content__item-title"></h2>
+					</div>
+				</div><!-- /content__item -->
+                <div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/shiptt.png" alt="Shiptt" />
+						<h2 class="content__item-title"></h2>
+					</div>
+				</div><!-- /content__item -->
+                <div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/boxbeetle.png" alt="Boxbeetle" />
+						<h2 class="content__item-title"></h2>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/social_impact_app_1.jpg" alt="Social Impact Apps" />
+						<h2 class="content__item-title"></h2>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/social_impact_app_2.jpg" alt="Social Impact Apps" />
+						<h2 class="content__item-title"></h2>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/social_impact_app_3.jpg" alt="Social Impact Apps" />
+						<h2 class="content__item-title"></h2>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/Roshni_Publications.jpg" alt="Roshni Publication" />
+						<h2 class="content__item-title"></h2>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/Busy_Business_Management_Software.jpg" alt="Busy Business Management Software" />
+						<h2 class="content__item-title"></h2>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/getitship.jpg" alt="Get-It-Ship" />
+						<h2 class="content__item-title"></h2>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/FrosCampelo.jpg" alt="Fros Campelo" />
+						<h2 class="content__item-title"></h2>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/soccerhogs.com.jpg" alt="SoccerHogs" />
+						<h2 class="content__item-title"></h2>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/CanePlanet.jpg" alt="CanePlanet" />
+						<h2 class="content__item-title"></h2>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/BusyPK_Brochure.jpg" alt="BusyPK_Brochure" />
+						<h2 class="content__item-title"></h2>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/getitshipApp.png" alt="getitshipApp_front" />
+						<h2 class="content__item-title"></h2>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/myalleyway.jpg" alt="myalleyway" />
+						<h2 class="content__item-title"></h2>
+					</div>
+				</div><!-- /content__item -->
+                <a class="btn-solid-lg page-scroll content__close">Close</a>
+			</div>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/charming.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/demo.js"></script>
+        
+        <!-- Scripts -->
+    <script src="../js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="../js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="../js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="../js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    
+    <script src="../js/scripts.js"></script> <!-- Custom scripts -->
+	</body>
+</html>
